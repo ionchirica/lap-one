@@ -1,8 +1,0 @@
-(library
- (name bullseye)
- (modules task1 task2 types))
-
-(env
- (dev
-  (flags
-   (:standard -w -27))))
