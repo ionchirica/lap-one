@@ -1,0 +1,4 @@
+(executable
+ (public_name bullseye)
+ (name main)
+ (libraries bullseye))

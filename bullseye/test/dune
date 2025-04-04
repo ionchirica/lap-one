@@ -1,0 +1,22 @@
+(test
+ (name test_bullseye)
+ (libraries ounit2 bullseye)
+ (modules test_bullseye))
+
+(rule
+ (alias runtest_task1)
+ (deps test_bullseye.exe)
+ (action
+  (run ./test_bullseye.exe -task task1)))
+
+(rule
+ (alias runtest_task2)
+ (deps test_bullseye.exe)
+ (action
+  (run ./test_bullseye.exe -task task2)))
+
+(rule
+ (alias runtest_both)
+ (deps test_bullseye.exe)
+ (action
+  (run ./test_bullseye.exe -task both)))
